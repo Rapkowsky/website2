@@ -21,9 +21,9 @@
 				</button>
 				<div class="nav-items">
 					<a href="#">home</a>
-					<a href="#">o nas</a>
-					<a href="#">produkty</a>
-					<a href="#">kontakt</a>
+					<a href="#about-us">o nas</a>
+					<a href="#products">produkty</a>
+					<a href="#contact">kontakt</a>
 				</div>
 			</div>
 		</nav>
@@ -35,7 +35,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="about-us wrapper">
+			<section class="about-us wrapper" id="about-us">
 				<h2 class="section-title">O nas</h2>
 				<p class="about-us-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat, quibusdam quam incidunt dignissimos blanditiis nobis tenetur suscipit iste nisi!</p>
 				<p class="about-us-info">
@@ -44,7 +44,7 @@
 				</p>
 			</section>
 
-			<section class="products wrapper">
+			<section class="products wrapper" id="products">
 				<h2 class="section-title">Produkty</h2>
 
 				<div class="products-box">
@@ -78,10 +78,14 @@
 				</div>
 			</section>
 
-			<section class="contact wrapper">
+			<section class="contact wrapper" id="contact">
 				<h2 class="section-title">kontakt</h2>
-				<p><ion-icon name="call-outline"></ion-icon>+48 000 000 000</p>
-				<p><ion-icon name="mail-outline"></ion-icon>example@mail.com</p>
+				<p>
+					<span class="icon"><ion-icon name="mail-outline"></ion-icon></span>example@mail.com
+				</p>
+				<p>
+					<span class="icon"><ion-icon name="call-outline"></ion-icon></span>+48 000 000 000
+				</p>
 
 				<h3>Adres</h3>
 				<p>ul. Borsucza</p>

@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "lato", sans-serif;
 }
@@ -45,9 +49,14 @@ body {
 	text-transform: uppercase;
 	text-align-last: center;
 }
-
+section {
+	scroll-margin-top: 60px;
+}
 /* NAVIGATION */
 .nav {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 	height: 60px;
 	line-height: 60px;
 	background-color: #ddd;
@@ -99,6 +108,10 @@ main {
 }
 .product h3 {
 	text-transform: uppercase;
+	transition: 0.3s;
+}
+.product:hover h3 {
+	transform: scale(1.1);
 }
 
 .product {
@@ -130,10 +143,16 @@ main {
 	text-transform: uppercase;
 }
 
+/* FOOTER */
+
 .footer {
 	text-align: center;
-padding: 30px 10px;
-background-color: #ddd;
+	padding: 30px 10px;
+	background-color: #ddd;
+}
+.icon {
+	margin-right: 10px;
+	vertical-align: middle;
 }
 
 @media (min-width: 768px) {
