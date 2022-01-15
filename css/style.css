@@ -122,6 +122,20 @@ main {
 	background-image: url(/img/img-4.jpg);
 }
 
+.contact {
+	text-align: center;
+}
+.contact h3 {
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+}
+
+.footer {
+	text-align: center;
+padding: 30px 10px;
+background-color: #ddd;
+}
+
 @media (min-width: 768px) {
 	.burger-icon {
 		display: none;
