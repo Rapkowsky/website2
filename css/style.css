@@ -7,3 +7,51 @@
 body {
 	font-family: "lato", sans-serif;
 }
+
+.nav {
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+.nav-items {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #333;
+		transition: 0.3s;
+	}
+	.nav-items a:hover {
+		color: #56b6c2;
+	}
+}

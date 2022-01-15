@@ -4,18 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Website 1</title>
+		<title>Website 2</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-		<script src="https://kit.fontawesome.com/55583989a0.js" crossorigin="anonymous"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<link rel="shortcut icon" href="#" />
 		<script defer src="js/script.js"></script>
 	</head>
 	<body>
-		<header></header>
-		<nav class="nav"></nav>
+		<nav class="nav">
+			<div class="wrapper">
+				<button class="burger-icon">
+					<ion-icon name="menu-sharp"></ion-icon>
+				</button>
+				<div class="nav-items">
+					<a href="#">home</a>
+					<a href="#">o nas</a>
+					<a href="#">produkty</a>
+					<a href="#">kontakt</a>
+				</div>
+			</div>
+		</nav>
+		<header class="header">
+			<div class="hero-bg"></div>
+			<div class="hero-txt"></div>
+			<h1>create<span>design</span></h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		</header>
 		<main></main>
 		<footer class="footer"></footer>
 	</body>
