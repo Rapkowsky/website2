@@ -8,17 +8,44 @@ body {
 	font-family: "lato", sans-serif;
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-txt {
+	position: absolute;
+	color: #fff;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-txt h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #ddd;
+}
+
+.hero-txt span {
+	text-transform: uppercase;
+	color: #00e7ffe6;
+}
+
+/* NAVIGATION */
 .nav {
 	height: 60px;
 	line-height: 60px;
 	background-color: #ddd;
 	text-align: center;
-}
-
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
 }
 
 .burger-icon {
@@ -34,6 +61,16 @@ body {
 
 .nav-items {
 	display: none;
+}
+
+/* HEADER */
+
+.header {
+	position: relative;
+	height: 350px;
+	background-image: url(/img/hero-mobile.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -53,5 +90,24 @@ body {
 	}
 	.nav-items a:hover {
 		color: #56b6c2;
+	}
+	.header {
+		height: 400px;
+		background-image: url(/img/hero-desktop.jpg);
+	}
+	.hero-txt h1 {
+		font-size: 36px;
+	}
+	.hero-txt p {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-txt h1 {
+		font-size: 42px;
+	}
+	.hero-txt p {
+		font-size: 20px;
 	}
 }
